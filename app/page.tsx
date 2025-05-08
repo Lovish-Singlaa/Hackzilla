@@ -30,7 +30,7 @@ export default function Home() {
                 with peers, and win amazing prizes!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="https://www.google.com" target="blank"><Button size="lg" className="bg-red-600 hover:bg-red-700">
+                <Link href="https://unstop.com/o/oH6XCJR?lb=U6LsRa6j" target="blank"><Button size="lg" className="bg-red-600 hover:bg-red-700">
                   Register Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button></Link>
                 {/* <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-950/30">
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-black to-red-950 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">Hackathon Starts In</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">Offline Round Starts In</h2>
             <div className="h-1 w-20 bg-red-600 mx-auto"></div>
           </div>
           <CountdownTimer targetDate="2025-05-28T09:00:00" />
