@@ -4,6 +4,7 @@ import { ArrowRight, Calendar, MapPin, Trophy, Users, Clock } from "lucide-react
 import CountdownTimer from "@/components/countdown-timer"
 import HeroAnimation from "@/components/hero-animation"
 import { Button } from "@/components/ui/button"
+import TimelineAnimation from "@/components/timeline-animation"
 
 export default function Home() {
   return (
@@ -13,10 +14,10 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <HeroAnimation />
         </div>
-        <div className="container relative z-10 mx-auto px-4 md:px-10 py-20 md:py-32">
+        <div className="container relative z-10 mx-auto px-4 md:px-10 py-10 md:py-32">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="space-y-6">
-        <Image src="/college_logo.png" alt="College Logo" width={40} height={40} className="object-contain z-50 relative text-right right-0" priority />
+              <Image src="/college_logo.png" alt="College Logo" width={40} height={40} className="object-contain z-50 relative text-right right-0" priority />
               <div className="inline-block rounded-lg bg-red-900/60 px-3 py-1 text-sm backdrop-blur-sm">
                 Celebrating National Technology Day 2025
               </div>
@@ -42,13 +43,13 @@ export default function Home() {
             <div className="relative h-[300px] md:h-[400px] w-full">
               {/* <Image src="/hackzilla-logo.png" alt="Hackzilla Logo" fill className="object-contain" priority /> */}
               <video
-    src="/poster_video.mp4"
-    className="object-contain w-full h-full"
-    autoPlay
-    loop
-    muted
-    playsInline
-  ></video>
+                src="/poster_video.mp4"
+                className="object-contain w-full h-full"
+                autoPlay
+                loop
+                muted
+                playsInline
+              ></video>
             </div>
           </div>
         </div>
@@ -144,27 +145,32 @@ export default function Home() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 bg-black overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <TimelineAnimation />
+        </div>
+        <div className="container relative z-10 mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Event Timeline</h2>
             <div className="h-1 w-20 bg-red-600 mx-auto"></div>
           </div>
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-red-800"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-red-800 to-red-600"></div>
 
             <div className="space-y-12">
               {timeline.map((item, index) => (
-                <div key={index} className={`flex items-center ${index % 2 === 0 ? "flex-row-reverse" : ""}`}>
+                <div key={index} className={`flex items-center ${index % 2 === 0 ? "flex-row-reverse" : ""} group`}>
                   <div className="w-1/2"></div>
-                  <div className="z-10 flex items-center justify-center w-8 h-8 rounded-full bg-red-600 shadow-lg">
+                  <div className="z-10 flex items-center justify-center w-8 h-8 rounded-full bg-red-600 shadow-lg group-hover:scale-125 transition-transform duration-300 shadow-red-600/50">
                     <Clock className="h-4 w-4" />
                   </div>
                   <div
-                    className={`w-1/2 p-4 rounded-lg bg-red-950/50 backdrop-blur-sm ${index % 2 === 0 ? "text-right mr-4" : "ml-4"}`}
+                    className={`w-1/2 p-4 rounded-lg bg-red-950/50 backdrop-blur-sm border border-red-900/50 
+                      ${index % 2 === 0 ? "text-right mr-4" : "ml-4"} 
+                      hover:bg-red-900/30 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1`}
                   >
-                    <h3 className="font-bold">{item.time}</h3>
+                    <h3 className="font-bold text-red-300">{item.time}</h3>
                     <p className="text-gray-300">{item.event}</p>
                   </div>
                 </div>
@@ -191,8 +197,9 @@ export default function Home() {
               <Image alt="sponsor1" src="/sponsor1.webp" width={50} height={50}></Image>
               <p className="text-xl font-bold text-center">HSCSIT (DST), Haryana</p>
             </div>
-            <div className="bg-white/10 p-6 rounded-lg flex items-center justify-center h-32">
-              <p className="text-xl font-bold text-center">Sponsor 2</p>
+            <div className="bg-white/10 p-3 rounded-lg items-center justify-center h-32">
+              <p className="text-xl font-bold text-center">Platform Partner</p>
+              <div className="w-full flex justify-center"><Image src="/sponsor2.jpg" alt="sponsor" width={200} height={30} className="object-fit"></Image></div>
             </div>
             <div className="bg-white/10 p-6 rounded-lg flex items-center justify-center h-32">
               <p className="text-xl font-bold text-center">Sponsor 3</p>
@@ -234,11 +241,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h2 className="text-2xl font-bold">
+              <p className="text-gray-400">IIIT Sonepat Presents</p>
+              <h2 className="text-2xl font-bold text-center">
                 <span className="text-white">Hack</span>
                 <span className="text-red-600">z://a</span>
               </h2>
-              <p className="text-gray-400">IIIT Sonepat Presents</p>
             </div>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-400 hover:text-white">
