@@ -29,7 +29,8 @@ export default function Home() {
                 Join the most exciting intercollege hackathon organized by IIIT Sonepat. Showcase your skills, network
                 with peers, and win amazing prizes!
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col items-center sm:flex-row gap-4">
+                <span className="font-bold text-2xl">Registrations Open!</span>
                 <Link href="https://unstop.com/o/oH6XCJR?lb=U6LsRa6j" target="blank"><Button size="lg" className="bg-red-600 hover:bg-red-700">
                   Register Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button></Link>
@@ -212,15 +213,15 @@ export default function Home() {
             <p className="mt-4 text-gray-300 max-w-2xl mx-auto">Have questions? Reach out to our team</p>
           </div>
           <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 text-center">
-            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg">
+            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg hover:border-red-500 hover:-translate-y-1">
               <p className="font-bold mb-2">Coordinator 1</p>
               <p className="text-gray-300">+91 9815975336</p>
             </div>
-            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg">
+            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg hover:border-red-500 hover:-translate-y-1">
               <p className="font-bold mb-2">Coordinator 2</p>
               <p className="text-gray-300">+91 7905428300</p>
             </div>
-            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg">
+            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg hover:border-red-500 hover:-translate-y-1">
               <p className="font-bold mb-2">Coordinator 3</p>
               <p className="text-gray-300">+91 8349680308</p>
             </div>
@@ -308,8 +309,24 @@ const themes = [
 
 const timeline = [
   {
-    time: "Day 1 - 9:00 AM",
-    event: "Registration & Check-in",
+    time: "8th May - 10:00 AM",
+    event: "Registration Begins",
+  },
+  {
+    time: "9th May - 9:00 AM",
+    event: "Round 1 Begins",
+  },
+  {
+    time: "16th May - 11:59 PM",
+    event: "Registration Ends",
+  },
+  {
+    time: "17th May - 11:59 PM",
+    event: "Round 1 Ends",
+  },
+  {
+    time: "20th May - 11:59 PM",
+    event: "Shortlisted Participants Announced",
   },
   {
     time: "Day 1 - 10:00 AM",
