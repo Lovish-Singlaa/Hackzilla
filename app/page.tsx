@@ -336,11 +336,11 @@ const timeline = [
     event: "Shortlisted Participants Announced",
   },
   {
-    time: "Day 1 - 10:00 AM",
+    time: "Day 1 (28 May) - 10:00 AM",
     event: "Opening Ceremony & Theme Announcement",
   },
   {
-    time: "Day 1 - 12:00 AM",
+    time: "Day 1 - 12:00 PM",
     event: "Hackathon Begins",
   },
   {
@@ -356,11 +356,11 @@ const timeline = [
     event: "Dinner",
   },
   {
-    time: "Day 1 - 12:00 PM",
+    time: "Day 1 - 12:00 AM",
     event: "2nd Mentors Evaluation Round",
   },
   {
-    time: "Day 2 - 6:00 AM",
+    time: "Day 2 (29 May) - 6:00 AM",
     event: "3rd Mentors Evaluation Round",
   },
   {
@@ -372,15 +372,15 @@ const timeline = [
     event: "Announcement of Top 10 Teams",
   },
   {
-    time: "Day 2 - 9:00 PM",
+    time: "Day 2 - 9:00 AM",
     event: "Judges Round",
   },
   {
-    time: "Day 2 - 9:30 PM",
+    time: "Day 2 - 9:30 AM",
     event: "Presentations Begin",
   },
   {
-    time: "Day 2 - 12:00 PM",
+    time: "Day 2 - 12:00 AM",
     event: "Announcement of Winners",
   },
   {
