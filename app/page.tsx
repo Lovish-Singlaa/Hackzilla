@@ -380,7 +380,7 @@ const timeline = [
     event: "Presentations Begin",
   },
   {
-    time: "Day 2 - 12:00 AM",
+    time: "Day 2 - 12:00 PM",
     event: "Announcement of Winners",
   },
   {
