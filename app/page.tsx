@@ -5,6 +5,7 @@ import CountdownTimer from "@/components/countdown-timer"
 import HeroAnimation from "@/components/hero-animation"
 import { Button } from "@/components/ui/button"
 import TimelineAnimation from "@/components/timeline-animation"
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials"
 
 export default function Home() {
   return (
@@ -201,26 +202,34 @@ export default function Home() {
               <p className="text-xl font-bold text-center">Platform Partner</p>
               <div className="w-full flex justify-center"><Image src="/UNSTOP_LOGO.png" alt="sponsor" width={200} height={30} className="object-fit"></Image></div>
             </div>
-            {/* <div className="bg-white/10 p-6 rounded-lg flex items-center justify-center h-32">
-              <p className="text-xl font-bold text-center">Sponsor 3</p>
+            <div className="bg-white/10 p-3 rounded-lg items-center justify-center h-32">
+              <p className="text-xl font-bold text-center">HackTour</p>
+              <div className="w-full flex justify-center"><Image src="/HackTour.png" alt="sponsor" width={80} height={30} className="object-fit"></Image></div>
             </div>
-            <div className="bg-white/10 p-6 rounded-lg flex items-center justify-center h-32">
-              <p className="text-xl font-bold text-center">Sponsor 4</p>
-            </div> */}
+            <div className="bg-white/10 p-3 rounded-lg items-center justify-center h-32">
+              <p className="text-xl font-bold text-center">GeeksForGeeks</p>
+              <div className="w-full flex justify-center"><Image src="/gfg-logo.png" alt="sponsor" width={80} height={30} className="object-fit"></Image></div>
+            </div>
+            <div className="bg-white/10 p-3 rounded-lg items-center justify-center h-32">
+              <p className="text-xl font-bold text-center">xyz</p>
+              <div className="w-full flex justify-center"><Image src="/xyz-logo.png" alt="sponsor" width={140} height={30} className="object-fit"></Image></div>
+            </div>
+            
           </div>
         </div>
       </section>
 
       {/* Contact */}
-      <section className="py-16 bg-red-950">
+      <section className="py-10 bg-red-950">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Contact Us</h2>
             <div className="h-1 w-20 bg-white mx-auto"></div>
             <p className="mt-4 text-gray-300 max-w-2xl mx-auto">Have questions? Reach out to our team</p>
           </div>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 text-center">
-            <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg hover:border-red-500 hover:-translate-y-1">
+          <div className="max-w-4xl mx-auto text-center">
+            <AnimatedTestimonials testimonials={testimonials}/>
+            {/* <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg hover:border-red-500 hover:-translate-y-1">
               <p className="font-bold mb-2">Coordinator 1</p>
               <p className="text-gray-300">+91 9815975336</p>
             </div>
@@ -231,7 +240,7 @@ export default function Home() {
             <div className="bg-black/50 backdrop-blur-sm p-6 rounded-lg hover:border-red-500 hover:-translate-y-1">
               <p className="font-bold mb-2">Coordinator 3</p>
               <p className="text-gray-300">+91 8349680308</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -388,3 +397,69 @@ const timeline = [
     event: "Award Ceremony & Closing",
   },
 ]
+
+const testimonials = [
+    {
+      quote:
+        "",
+      name: "Shivansh Agrawal",
+      designation: "shivansh.agrprof@gmail.com",
+      src: "/1.jpg",
+    },
+    {
+      quote:
+        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+      name: "Lovish Singla",
+      designation: "singlalovish26@gmail.com",
+      src: "/2.jpg",
+    },
+    {
+      quote:
+        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+      name: "Kashish Nandwani",
+      designation: "nandwanikashish14@gmail.com",
+      src: "/3.jpg",
+    },
+    {
+      quote:
+        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+      name: "Aditya Kumar",
+      designation: "aditya05yt@gmail.com",
+      src: "/4.jpg",
+    },
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Swati",
+      designation: "swatipraj7087@gmail.com",
+      src: "/5.jpg",
+    },
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Prakhar Srivastava",
+      designation: "prakharsrivastava0808@gmail.com",
+      src: "/6.jpg",
+    },
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Poshika Bhatnagar",
+      designation: "poshikabhatnagar777@gmail.com",
+      src: "/7.jpg",
+    },
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Shubham Shoora",
+      designation: "shoorashubham@gmail.com",
+      src: "/8.jpg",
+    },
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Aditya Joshi",
+      designation: "adityaj2206@gmail.com",
+      src: "/9.jpg",
+    },
+  ];
