@@ -6,10 +6,12 @@ import HeroAnimation from "@/components/hero-animation"
 import { Button } from "@/components/ui/button"
 import TimelineAnimation from "@/components/timeline-animation"
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials"
+import RunningNotification from "@/components/ui/running-notification"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
+      <RunningNotification/>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -341,7 +343,7 @@ const timeline = [
     event: "Round 1 Ends",
   },
   {
-    time: "20th May - 11:59 PM",
+    time: "21st May - 11:59 PM",
     event: "Shortlisted Participants Announced",
   },
   {
